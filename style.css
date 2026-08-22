@@ -1,0 +1,70 @@
+.gift{
+background-color: rgb(117, 180, 231);
+padding: 20px;
+border: 5px solid navy;
+text-align: center;
+margin: 20px;
+width: 200px;
+}
+
+.suitcase{
+    width: 300px;
+    height: 150px;
+    min-width: 150px;
+    max-width: 350px;
+    min-height: 100px;
+    max-height: 200px;
+    
+    overflow: auto;
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    padding: 2px;
+    border: 2px solid navy;
+    color: darkblue;
+    margin: 20px;
+
+
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+.boxstatic{
+    background-color: antiquewhite;
+    position: static;
+}
+.boxrelative{
+    background-color: aqua;
+    position: relative;
+    top: 20px;
+    left: 10px;
+}
+.parent{
+    background-color: aquamarine;
+    height: 200px;
+    width: 300px;
+    margin: 30px;
+    position: relative;
+    
+}
+.boxabsolute{
+    background-color: lightgreen;
+    position: absolute;
+    top: 20px;
+    right:40px;
+
+}
+.boxfixed{
+    background-color: yellow;
+    position: fixed;
+    bottom:  0px;
+    right: 20px;
+}
+.boxsticky{
+    background-color: violet;
+    position: sticky;
+    
+    top: 0;
+}

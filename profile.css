@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F4F4F4;
+    padding: 0;
+    margin: 0;
+}
+.sticky_header{
+    position: sticky;
+    top: 0 ;
+    background-color: rgba(4, 66, 199, 0.714);
+    padding: 15px;
+    text-align: center;
+    border-bottom: 4px solid #023e8a;
+    z-index: 100;
+    color: #F4F4F4;
+}
+.profile-card{
+ width: 300px;
+ min-height: 380px;
+ background-color: white;
+ border: 2px solid #ddd;
+ border-radius: 10px;
+ padding: 20px;
+ position: relative;
+ overflow: hidden;
+
+}
+.badge{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: gold;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+}
+.profile-picture{
+display: block;
+margin: 0 auto 15px auto;
+border-radius: 50% ;
+border: 3px solid #0077b6;
+margin: 16p auto;
+width: 120px;
+height: 120px;
+}
+.name{
+    text-align: center;
+    color: #023e8a;
+    margin-bottom: 10px;
+}
+.bio{
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    overflow: hidden;
+
+}
+.stats {
+    text-align: center;
+
+}
+.stat{
+    display: inline-block;
+    width: 80px;
+    margin: 5px;
+    padding: 10px;
+    background: #caf0f8;
+    border-radius: 5px;
+}
+.stat h3{
+    color: #0077b6;
+    margin-bottom: 5px;
+}
+.contant-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0064d8;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.contant-button :hover{
+    background-color: #056ea3;
+}
