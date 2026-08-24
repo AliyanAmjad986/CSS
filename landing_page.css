@@ -7,7 +7,9 @@
 } */
 body{
   background-color: #2854fd;
-  
+  overflow: auto;
+  font-family: "hebbo", sans-serif;
+  color: aliceblue;
 }
 header{
   border: 2px solid #3866ff;
@@ -16,11 +18,12 @@ header{
   border: 2px solid #3866ff;
   border-bottom: 0px;
   border-right: 0px;
+  width: 50%;
 
   
 }
-.head-box{
-  width: 75%;
+.headfirst-box{
+  width: 62%;
 
   
 }
@@ -40,11 +43,13 @@ border-color: #3866ff
  }
  .container1{
   display: flex;
-width: 100%;
+  flex-direction: row;
+  
+/* width: 100%; */
  }
   .container2{
   display: flex;
-width: 100%;
+/* width: 100%; */
  }
  footer{
   display: flex;
@@ -53,4 +58,16 @@ width: 100%;
  }
  footer p{
   margin: 30px ;
+ }
+ .head-box{
+  display: flex;
+  flex-direction: row;
+  gap: 60%;
+  margin: 3%;
+ }
+ .box h2{
+  width: fit-content;
+ }
+ .box p{
+  font-size: 10px;
  }
