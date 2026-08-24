@@ -23,23 +23,33 @@ header{
   
 }
 .headfirst-box{
-  width: 62%;
+  width: 50%;
+  margin: 5%;
+  
 
   
+}
+.headfirst-box h1{
+  font-size: 60px;
+  width: 60%;
 }
  .sec{
     display: flex;
 border: 2px solid #3866ff;
 border-top: 0px;
-border-color: #3866ff
-
-;
-
+border-color: #3866ff;
+ }
+ .headfirst-box p{
+  font-size: 20px;
+  width: 65%;
  }
  .parent-box{
 
- 
+ width: 50%;;
   /* width: 100%; */
+ }
+ .parent-box h4{
+  font-size: 30px;
  }
  .container1{
   display: flex;
@@ -54,7 +64,7 @@ border-color: #3866ff
  footer{
   display: flex;
   flex-direction: row;
-  gap: 75%;
+  gap: 65%;
  }
  footer p{
   margin: 30px ;
@@ -62,12 +72,19 @@ border-color: #3866ff
  .head-box{
   display: flex;
   flex-direction: row;
-  gap: 60%;
+  gap: 65%;
   margin: 3%;
+ }
+ .head-box h2{
+  font-size: 30px;
+ }
+ .head-box h4{
+  font-size: 20px;
  }
  .box h2{
   width: fit-content;
+  font-size: 30px;
  }
  .box p{
-  font-size: 10px;
+  font-size: 15px;
  }
