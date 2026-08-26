@@ -6,7 +6,45 @@ padding: 0;
 header{
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding: 1%;
+
+}
+.menu_logo_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.menubtn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    /* position: relative; */
+    /* bottom: 5px; */
+
+}
+.menubtn:hover{
+   background-color:  rgba(216, 216, 216, 0.5);
+}
+.menubtn:active{
+    background-color: rgba(216, 216, 216, 0.75);
+}
+.menuu{
+
+}
+.menuu span{
+height: 3px;
+width: 20px;
+background-color: black;
+display: block;
+margin: 3px 0;
 }
 .headbar_icon{
     display: flex;
@@ -51,9 +89,24 @@ margin: 0px;
   width: 600px;
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+.active_search_container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.active_search{
+      margin: 9px;
+    height: 20px;
+    width: 23px;
+      position: relative;
+    left:0px;
+    display: block;
+
 }
 .searchbar_input{
-    /* border: 1px solid #c7c1c1;*/
+    border: 0;
     border: 0px;
     margin: 0;
     padding: 10px 10px;
@@ -68,8 +121,40 @@ margin: 0px;
  font-size: 16px;
   width: 520px;
 }
+.searchbar_input:focus 
+{
+    outline:1px solid #1c62b9;
+    width: 490px;
+    /* position: relative;
+    left: 40px; */
+    padding-left: 40px;
+    
+    
+}
+.active_search_container{
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: center;
+    /* position: absolute; */
+}
+.active_search{
+      margin: 9px;
+    height: 20px;
+    width: 23px;
+      position: absolute;
+    left:0px;
+    display: none;
+
+}
+.searchbar_input:focus + .active_search{
+display: block;
+}
+
+
+
+
 .searchicon{
-    height: 38px;
+    height: 39px;
 border-start-end-radius: 30px;
 border-end-end-radius: 30px;
 width: 70px;
@@ -90,5 +175,185 @@ width: 70px;
 .head_container{
 display: flex;
 flex-direction:row ;
-gap: 30%;
+gap: 28%;
+}
+.crossbtn{
+    height: fit-content;
+    border-radius:50% ;
+    padding: 8px;
+    position: absolute;
+    right: 60px;
+    display: none;
+    background-color: transparent;
+    border: 0;
+   
+}
+.cross_icon{
+    height: 20px;
+}
+.crossbtn:hover{
+    background-color: rgba(216, 216, 216, 0.5);
+}
+.crossbtn:active{
+    background-color: rgba(216, 216, 216, 0.75);
+}
+
+.searchbar_input:not(:placeholder-shown) ~ .crossbtn  {
+display: block;
+}
+.microphone{
+padding: 10px;
+background-color: rgba(163, 163, 163, 0.25);
+border-radius: 50%;
+height: 20px;
+text-align: center;
+align-items: center;
+
+}
+.microphone img{
+    height: 20px;
+    width: 20px;
+}
+.con_serch_mic{
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+
+
+}
+.create_profile_container{
+display: flex;
+flex-direction: row;
+gap: 10%;
+}
+.createbtn{
+  
+}
+.createbtn button{
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+    width: 120px;
+    border-start-end-radius: 30px;
+    border-start-start-radius: 30px;
+    border-end-start-radius: 30px;
+    border-end-end-radius: 30px;
+    height: 40px;
+    justify-content: center;
+   
+}
+.createbtn button p{
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+.createbtn button img{
+    height: 20px;
+
+}
+.profile{
+height: 40px;
+}
+.profile button{
+    width: 46px;
+    border-radius: 50%;
+    height: 42px;
+    
+}
+.profile img{
+    position: relative;
+    right: 7px;
+    width: 45px;
+    bottom: 2px;
+    cursor: pointer;
+}
+
+.sidenavbar{
+    border: 1px solid black;
+width: 70px;
+/* padding: 10px; */
+}
+
+.Hometbn{
+   
+}
+.Homebtn button{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+font-family: "Roboto", Arial, sans-serif;
+font-size: 10px;
+padding: 10px;
+border-radius: 10px;
+border: 0;
+ border: 1px solid black;
+ width: 70px;
+}
+.Homebtn button img{
+    width: 25px;
+    padding-bottom: 8px;
+}
+.Homebtn:hover{
+    background-color: rgba(163, 163, 163, 0.25);
+    border-radius: 10px;
+}
+.youbtn{
+    text-align: center;
+  
+    border: 1px solid black;
+}
+.youbtn button{
+display: block;
+    align-items: center;
+    justify-content: center;
+
+    background-color: transparent;
+font-family: "Roboto", Arial, sans-serif;
+font-size: 10px;
+padding: 10px;
+border-radius: 10px;
+border: 0;
+ border: 1px solid black;
+ width: 70px;
+ 
+}
+.youbtn p{
+    margin: 0;
+}
+.youbtn button img{
+    width: 25px;
+    padding-bottom: 8px;
+   
+    
+}
+.youbtn:hover{
+    background-color: rgba(163, 163, 163, 0.25);
+    border-radius: 10px;
+}
+.Shortsbtn{
+
+}
+.Shortsbtn:hover{
+     background-color: rgba(163, 163, 163, 0.25);
+    border-radius: 10px;
+}
+.Shortsbtn button {
+display: block;
+align-items: center;
+justify-content: center;
+background-color: transparent;
+font-family: "Roboto", Arial, sans-serif;
+font-size: 10px;
+padding: 10px;
+border-radius: 10px;
+border: 0;
+ border: 1px solid black;
+ width: 70px;
+}
+.Shortsbtn button img{
+ width: 25px;
+    padding-bottom: 8px;
 }
