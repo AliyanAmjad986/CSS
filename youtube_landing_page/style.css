@@ -25,9 +25,9 @@ header{
     border: 0;
     background-color: transparent;
     padding: 0;
-    margin: 0;
-    /* position: relative; */
-    /* bottom: 5px; */
+    margin: 14px;
+    
+   
 
 }
 .menubtn:hover{
@@ -37,7 +37,7 @@ header{
     background-color: rgba(216, 216, 216, 0.75);
 }
 .menuu{
-
+/* margin-left: 30px; */
 }
 .menuu span{
 height: 3px;
@@ -175,7 +175,11 @@ width: 70px;
 .head_container{
 display: flex;
 flex-direction:row ;
-gap: 28%;
+gap: 30%;
+margin-left: 35px;
+/* border: 1px solid black; */
+/* position: absolute; */
+/* left: 55px; */
 }
 .crossbtn{
     height: fit-content;
@@ -271,9 +275,14 @@ height: 40px;
 }
 
 .sidenavbar{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 width: 70px;
 /* padding: 10px; */
+position: absolute;
+top: 2px;
+align-items: center;
+text-align: center;
+align-content: center;
 }
 
 .Hometbn{
@@ -289,7 +298,7 @@ font-size: 10px;
 padding: 10px;
 border-radius: 10px;
 border: 0;
- border: 1px solid black;
+ 
  width: 70px;
 }
 .Homebtn button img{
@@ -303,7 +312,7 @@ border: 0;
 .youbtn{
     text-align: center;
   
-    border: 1px solid black;
+    
 }
 .youbtn button{
 display: block;
@@ -316,7 +325,7 @@ font-size: 10px;
 padding: 10px;
 border-radius: 10px;
 border: 0;
- border: 1px solid black;
+
  width: 70px;
  
 }
@@ -350,10 +359,74 @@ font-size: 10px;
 padding: 10px;
 border-radius: 10px;
 border: 0;
- border: 1px solid black;
+
  width: 70px;
 }
 .Shortsbtn button img{
  width: 25px;
     padding-bottom: 8px;
+}
+.Subscriptionsbtn{
+
+}
+.Subscriptionsbtn button{
+display: block;
+
+/* align-items: center; */
+justify-content: center;
+background-color: transparent;
+font-family: "Roboto", Arial, sans-serif;
+font-size: 10px;
+padding: 5px;
+
+border-radius: 10px;
+border: 0;
+ 
+ width: 70px;
+ 
+}
+.Subscriptionsbtn button p{
+margin: 0;
+text-align: center;
+width: 50px;
+
+}
+.Subscriptionsbtn button img{
+width: 25px;
+    padding: 10px;
+}
+.Subscriptionsbtn:hover{
+      background-color: rgba(163, 163, 163, 0.25);
+    border-radius: 10px;
+}
+
+.menubtn:active + .sidenavbar{
+    border: 1px solid black;
+}
+.sidenav{
+    
+}
+
+.categories{
+    display: flex;
+    flex-direction: flex;
+    margin-left: 80px;
+    gap: 1%;
+}
+.categories button{
+    font-family: "Roboto", Arial,sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    border: 0;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.categories button:active{
+    background-color: black;
+    color: white;
+}
+.categories button:focus{
+    background-color: black;
+    color: white;
 }
