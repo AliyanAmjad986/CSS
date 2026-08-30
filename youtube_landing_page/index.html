@@ -1,265 +1,408 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
-    <link rel="icon" type="image/x-icon" href="images/youtubeicon.png">
-    <link rel="stylesheet" href="style.css">
-    <!-- link the font -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <form action="">
+
+    <link rel="icon" type="image/x-icon" href="images/youtubeicon.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header style="display: flex; flex-direction: column;">
         <div class="head_container">
-
-            
-
-            <div class="menu_logo_container">
-                
-        <div class="headbar_icon" >
-            <img src="images/favicon.png" alt="yticon">
-            <h4>YouTube</h4>
-            <p>pk</p>
-        </div>
-        </div>
-        <!-- on display mobile only -->
-
-        <div class="search_during_mobile">
-            <button><img src="images/searchicon.png" alt=""></button>
-        </div>
-       
-        <div class="con_serch_mic">
-        <div class="search_bar">
-            <div class="active_search_container">
-                <input type="text" class="searchbar_input" name="searchbar" id="searchbar" placeholder="Search">
-                <img class="active_search" src="images/searchicon.png" alt="serarch icon">
-                <button class="crossbtn" type="reset"  ><img class="cross_icon" src="images/crossicon.png" alt="cross"></button>
-                
+          <div class="menu_logo_container">
+            <div class="headbar_icon">
+              <img src="images/favicon.png" alt="yticon" />
+              <h4>YouTube</h4>
+              <p>pk</p>
             </div>
-            <div class="searchicon"><img src="images/searchicon.png" alt="searchiconn">
+          </div>
+
+          <!-- On display mobile only -->
+          <div class="search_during_mobile">
+            <button type="button">
+              <img src="images/searchicon.png" alt="Search" />
+            </button>
+          </div>
+
+          <div class="con_serch_mic">
+            <div class="search_bar">
+              <div class="active_search_container">
+                <input
+                  type="text"
+                  class="searchbar_input"
+                  name="searchbar"
+                  id="searchbar"
+                  placeholder="Search"
+                />
+
+                <img
+                  class="active_search"
+                  src="images/searchicon.png"
+                  alt="Search icon"
+                />
+
+                <button class="crossbtn" type="reset">
+                  <img
+                    class="cross_icon"
+                    src="images/crossicon.png"
+                    alt="Cross"
+                  />
+                </button>
+              </div>
+
+              <div class="searchicon">
+                <img src="images/searchicon.png" alt="Search icon" />
+              </div>
             </div>
 
-           
-        </div>
-         <div class="microphone">
-            <img src="images/micicon.png" alt="micphone">
-        </div>
-        </div>
-        
+            <div class="microphone">
+              <img src="images/micicon.png" alt="Microphone" />
+            </div>
+          </div>
 
-
-        <div class="create_profile_hero">
+          <div class="create_profile_hero">
             <div class="create_profile_container">
-                <div class="createbtn">
-                <button>
-                    <img src="images/plusicon.png" alt="plusicon">
-                    <p>Create</p>
+              <div class="createbtn">
+                <button type="button">
+                  <img src="images/plusicon.png" alt="Plus icon" />
+                  <p>Create</p>
                 </button>
-            </div>
-            <div class="profile">
-                <button>
-                    <img src="images/profileicon.png" alt="pofilepic">
+              </div>
+
+              <div class="profile">
+                <button type="button">
+                  <img src="images/profileicon.png" alt="Profile picture" />
                 </button>
-                
+              </div>
             </div>
-            </div>
+          </div>
         </div>
-        </div>
-          <section class="category_group">
-            <div class="category_filter_container">
-                <div class="categories">
-                    <button>All</button>
-                    <button>Podcast</button>
-                    <button>Self-esteme</button>
-                    <button>Intelligence</button>
-                    <button>AI</button>
-                    <button>Wealth</button>
-                    <button>Goals</button>
-                    <button>Recruitment</button>
-                    <button>Media Theories</button>
-                    <button>History</button>
-                    <button>Live</button>
-                    <button>Courses</button>
-                    <button>Sales</button>
-                    <button>Recently Uploads</button>
-                    <button>Watched</button>
-                    <button>New to You</button>
-                   
-                    
-                </div>
+
+        <section class="category_group">
+          <div class="category_filter_container">
+            <div class="categories">
+              <button type="button">All</button>
+              <button type="button">Podcast</button>
+              <button type="button">Self-esteme</button>
+              <button type="button">Intelligence</button>
+              <button type="button">AI</button>
+              <button type="button">Wealth</button>
+              <button type="button">Goals</button>
+              <button type="button">Recruitment</button>
+              <button type="button">Media Theories</button>
+              <button type="button">History</button>
+              <button type="button">Live</button>
+              <button type="button">Courses</button>
+              <button type="button">Sales</button>
+              <button type="button">Recently Uploads</button>
+              <button type="button">Watched</button>
+              <button type="button">New to You</button>
             </div>
-     </header> 
-    
-    <main>
-
-        
-        <nav class="sidenav">
-            
-            <div class="sidenavbar">
-                <button class="menubtn">
-                <div class="menuu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                 </button>
-                 <div class="navbtndetails">
-                <div class="Homebtn">
-                    
-                    <button title="Home"><img src="images/Home icon.png" alt="homeimg">Home </button>
-                
-                </div>
-                <div class="Shortsbtn">
-                    
-                <button title="Shorts">
-                    
-                    
-                    <img src="images/shortsicon.png" alt="homeimg">Shorts</button>
-                </div>
-                 <div class="Subscriptionsbtn">
-                    
-                    <button title="Subscriptions"><img src="images/subcriptionsicon.png" alt="profileimg"><p>Subscriptions</p></button>
-                </div>
-                <div class="subscriptions_container">
-                <div class="subscriptionsnav">
-                    <h4>Subscriptions</h4>
-                    <button><img src="images/profile.png" alt="channelprofile"><p>Seeken</p></button>
-                    <button><img src="images/profile.png" alt="channelprofile"><p>Him-esh Madaan</p></button>
-                    <button> <img src="images/profile.png" alt="profile">Documentary Hindi</button>
-                    <button> <img src="images/profile.png" alt="profile">Thynk Pakistan</button>
-                    <button> <img src="images/profile.png" alt="video"5>India Reality</button>
-                    <button> <img src="images/profile.png" alt="videos6">Mind Games</button>
-                    <button> <img src="images/moreicon.png" alt="More">Show More</button>
-                </div>
-                
-            </div>
-                <div class="youbtn">
-                    
-                    <button title="You"> <img src="images/profile.png" alt="profileimg"><p>You</p></button>
-                </div>
-            <div class="YouNav_container">
-                <div class="YouNav">
-                    <h4>You </h4>
-                    <button><img src="images/yourpersonal.png" alt="personal"><p>Your Personal</p></button>
-                    <button><img src="images/historyicon.png" alt="history"><p>History</p></button>
-                    <button> <img src="images/playlistsicon.png" alt="playlist">Playlists</button>
-                    <button> <img src="images/watchlater.png" alt="waterlater">Water Later</button>
-                    <button> <img src="images/likedvideo.png" alt="likedvideo">Liked videos</button>
-                    <button> <img src="images/videos.png" alt="videos">Your videos</button>
-                    <button> <img src="images/Download.png" alt="download">Downloads</button>
-                </div>
-                
-            </div>
-            </div>
-            </div>
-          
-        </nav>
-
-      
-        <section class="videos_card">
-            <div class="video_card_container">
-                <div class="cards">
-                    <img class="coverimg" src="images/card1.jpg" alt="cardoneimg">
-                    <div class="card_details">
-                        <div class="channel_detail">
-                        <img class="channel_profileimg" src="images/profile.png" alt="profile">
-                        <h4 class="title_video">History of Greece - ep75</h4>
-                    </div>
-                    <p class="channel_name">Him-esh Madaan</p>
-                    <div class="timenveiw">
-                    <p class="veiws">401K veiws</p>
-                    <p class="past_time">2 months ago</p>
-                    </div>
-                 </div>   
-                </div>
-
-                <!-- card2 -->
-                 <div class="cards">
-                    <img class="coverimg" src="images/card2.jpg" alt="cardoneimg">
-                    <div class="card_details">
-                        <div class="channel_detail">
-                        <img class="channel_profileimg" src="images/profile.png" alt="profile">
-                        <h4 class="title_video">Pakistan History and 9/11 - Thynk Pakistan</h4>
-                    </div>
-                    <p class="channel_name">Thynk Pakistan</p>
-                    <div class="timenveiw">
-                    <p class="veiws">200K veiws</p>
-                    <p class="past_time">1 months ago</p>
-                    </div>
-                 </div>   
-                </div>
-
-                <!-- card3 -->
-                 <div class="cards">
-                    <img class="coverimg" src="images/card3.jpg" alt="cardoneimg">
-                    <div class="card_details">
-                        <div class="channel_detail">
-                        <img class="channel_profileimg" src="images/profile.png" alt="profile">
-                        <h4 class="title_video">Elon Musk's Tesla Company - Documentry</h4>
-                    </div>
-                    <p class="channel_name">Documentary Hindi</p>
-                    <div class="timenveiw">
-                    <p class="veiws">135K veiws</p>
-                    <p class="past_time">4 months ago</p>
-                    </div>
-                 </div>   
-                </div>
-
-                <!-- card4 -->
-                 <div class="cards">
-                    <img class="coverimg" src="images/card4.jpg" alt="cardoneimg">
-                    <div class="card_details">
-                        <div class="channel_detail">
-                        <img class="channel_profileimg" src="images/profile.png" alt="profile">
-                        <h4 class="title_video">Never Forget This Video - Stupid Brain</h4>
-                    </div>
-                    <p class="channel_name">Mind Games</p>
-                    <div class="timenveiw">
-                    <p class="veiws">201K veiws</p>
-                    <p class="past_time">2 months ago</p>
-                    </div>
-                 </div>   
-                </div>
-
-                <!-- card5 -->
-                 <div class="cards">
-                    <img class="coverimg" src="images/card5.jpg" alt="cardoneimg">
-                    <div class="card_details">
-                        <div class="channel_detail">
-                        <img class="channel_profileimg" src="images/profile.png" alt="profile">
-                        <h4 class="title_video">Reality of Osho - Reality India</h4>
-                    </div>
-                    <p class="channel_name">India Reality</p>
-                    <div class="timenveiw">
-                    <p class="veiws">555K veiws</p>
-                    <p class="past_time">6 months ago</p>
-                    </div>
-                 </div>   
-                </div>
-
-                <!-- card6 -->
-                 <div class="cards">
-                    <img class="coverimg" src="images/card6.jpg" alt="cardoneimg">
-                    <div class="card_details">
-                        <div class="channel_detail">
-                        <img class="channel_profileimg" src="images/profile.png" alt="profile">
-                        <h4 class="title_video">Janta Party -Documentry </h4>
-                    </div>
-                    <p class="channel_name">Documentary India</p>
-                    <div class="timenveiw">
-                    <p class="veiws">75K veiws</p>
-                    <p class="past_time">4 weeks ago</p>
-                    </div>
-                 </div>   
-                </div>
-
-            </div>
+          </div>
         </section>
+    </header>
+
+    <main>
+      <nav class="sidenav">
+        <div class="sidenavbar">
+          <button class="menubtn" type="button">
+            <div class="menuu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+
+          <div class="navbtndetails">
+            <div class="Homebtn">
+              <button title="Home" type="button">
+                <img src="images/Home icon.png" alt="Home" />
+                Home
+              </button>
+            </div>
+
+            <div class="Shortsbtn">
+              <button title="Shorts" type="button">
+                <img src="images/shortsicon.png" alt="Shorts" />
+                Shorts
+              </button>
+            </div>
+
+            <div class="Subscriptionsbtn">
+              <button title="Subscriptions" type="button">
+                <img src="images/subcriptionsicon.png" alt="Subscriptions" />
+                <p>Subscriptions</p>
+              </button>
+            </div>
+
+            <div class="subscriptions_container">
+              <div class="subscriptionsnav">
+                <h4>Subscriptions</h4>
+
+                <button type="button">
+                  <img src="images/profile.png" alt="Channel profile" />
+                  <p>Seeken</p>
+                </button>
+
+                <button type="button">
+                  <img src="images/profile.png" alt="Channel profile" />
+                  <p>Him-esh Madaan</p>
+                </button>
+
+                <button type="button">
+                  <img src="images/profile.png" alt="Profile" />
+                  Documentary Hindi
+                </button>
+
+                <button type="button">
+                  <img src="images/profile.png" alt="Profile" />
+                  Thynk Pakistan
+                </button>
+
+                <button type="button">
+                  <img src="images/profile.png" alt="Video" />
+                  India Reality
+                </button>
+
+                <button type="button">
+                  <img src="images/profile.png" alt="Videos" />
+                  Mind Games
+                </button>
+
+                <button type="button">
+                  <img src="images/moreicon.png" alt="More" />
+                  Show More
+                </button>
+              </div>
+            </div>
+
+            <div class="youbtn">
+              <button title="You" type="button">
+                <img src="images/profile.png" alt="Profile" />
+                <p>You</p>
+              </button>
+            </div>
+
+            <div class="YouNav_container">
+              <div class="YouNav">
+                <h4>You</h4>
+
+                <button type="button">
+                  <img src="images/yourpersonal.png" alt="Personal" />
+                  <p>Your Personal</p>
+                </button>
+
+                <button type="button">
+                  <img src="images/historyicon.png" alt="History" />
+                  <p>History</p>
+                </button>
+
+                <button type="button">
+                  <img src="images/playlistsicon.png" alt="Playlist" />
+                  Playlists
+                </button>
+
+                <button type="button">
+                  <img src="images/watchlater.png" alt="Watch later" />
+                  Watch Later
+                </button>
+
+                <button type="button">
+                  <img src="images/likedvideo.png" alt="Liked videos" />
+                  Liked videos
+                </button>
+
+                <button type="button">
+                  <img src="images/videos.png" alt="Videos" />
+                  Your videos
+                </button>
+
+                <button type="button">
+                  <img src="images/Download.png" alt="Download" />
+                  Downloads
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="videos_card">
+        <div class="video_card_container">
+          <!-- Card 1 -->
+          <div class="cards">
+            <img class="coverimg" src="images/card1.jpg" alt="Card one image" />
+
+            <div class="card_details">
+              <div class="channel_detail">
+                <img
+                  class="channel_profileimg"
+                  src="images/profile.png"
+                  alt="Profile"
+                />
+
+                <h4 class="title_video">History of Greece - ep75</h4>
+              </div>
+
+              <p class="channel_name">Him-esh Madaan</p>
+
+              <div class="timenveiw">
+                <p class="veiws">401K views</p>
+                <p class="past_time">2 months ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="cards">
+            <img class="coverimg" src="images/card2.jpg" alt="Card two image" />
+
+            <div class="card_details">
+              <div class="channel_detail">
+                <img
+                  class="channel_profileimg"
+                  src="images/profile.png"
+                  alt="Profile"
+                />
+
+                <h4 class="title_video">
+                  Pakistan History and 9/11 - Thynk Pakistan
+                </h4>
+              </div>
+
+              <p class="channel_name">Thynk Pakistan</p>
+
+              <div class="timenveiw">
+                <p class="veiws">200K views</p>
+                <p class="past_time">1 month ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="cards">
+            <img
+              class="coverimg"
+              src="images/card3.jpg"
+              alt="Card three image"
+            />
+
+            <div class="card_details">
+              <div class="channel_detail">
+                <img
+                  class="channel_profileimg"
+                  src="images/profile.png"
+                  alt="Profile"
+                />
+
+                <h4 class="title_video">
+                  Elon Musk's Tesla Company - Documentary
+                </h4>
+              </div>
+
+              <p class="channel_name">Documentary Hindi</p>
+
+              <div class="timenveiw">
+                <p class="veiws">135K views</p>
+                <p class="past_time">4 months ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="cards">
+            <img
+              class="coverimg"
+              src="images/card4.jpg"
+              alt="Card four image"
+            />
+
+            <div class="card_details">
+              <div class="channel_detail">
+                <img
+                  class="channel_profileimg"
+                  src="images/profile.png"
+                  alt="Profile"
+                />
+
+                <h4 class="title_video">
+                  Never Forget This Video - Stupid Brain
+                </h4>
+              </div>
+
+              <p class="channel_name">Mind Games</p>
+
+              <div class="timenveiw">
+                <p class="veiws">201K views</p>
+                <p class="past_time">2 months ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="cards">
+            <img
+              class="coverimg"
+              src="images/card5.jpg"
+              alt="Card five image"
+            />
+
+            <div class="card_details">
+              <div class="channel_detail">
+                <img
+                  class="channel_profileimg"
+                  src="images/profile.png"
+                  alt="Profile"
+                />
+
+                <h4 class="title_video">Reality of Osho - Reality India</h4>
+              </div>
+
+              <p class="channel_name">India Reality</p>
+
+              <div class="timenveiw">
+                <p class="veiws">555K views</p>
+                <p class="past_time">6 months ago</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="cards">
+            <img class="coverimg" src="images/card6.jpg" alt="Card six image" />
+
+            <div class="card_details">
+              <div class="channel_detail">
+                <img
+                  class="channel_profileimg"
+                  src="images/profile.png"
+                  alt="Profile"
+                />
+
+                <h4 class="title_video">Janta Party - Documentary</h4>
+              </div>
+
+              <p class="channel_name">Documentary India</p>
+
+              <div class="timenveiw">
+                <p class="veiws">75K views</p>
+                <p class="past_time">4 weeks ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-        </form>
-    </body>
+  </body>
 </html>
